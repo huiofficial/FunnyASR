@@ -9,7 +9,8 @@ if __name__ == "__main__":
     parser.add_argument('--input_file', type=str, default='test1.m4a', help='Input audio file')
     parser.add_argument('--output_text', type=str, default='output.txt', help='Output text file')
     parser.add_argument('--output_srt', type=str, default='output.srt', help='Output SRT file')
-    parser.add_argument('--output_srt', type=str, default='output.srt', help='Output SRT file')
+    parser.add_argument('--sd_switch', type=str, default='no', help='sd_switch')
+    parser.add_argument('--hotwords', type=str, default='', help='Hotwords')
     args = parser.parse_args()
 
     funasr_model = AutoModel(model="iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch",

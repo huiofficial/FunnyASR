@@ -1,18 +1,37 @@
 # FunnyASR
-  
-A web UI for ASR based on funasr.  
 
 现在很多手机和电脑端的语音识别 APP 居然要收费，太过分了有木有！那本项目就基于开源的 funasr 进行本地的端到端语音识别，为大家做一个简单的免费语音识别工具。
 
 后续会构建 macOS app，敬请期待！
 
-使用方法：
+## 使用方法
 
+### 安装
+
+```# 安装依赖
+pip install -r requirements.txt
+
+pip install torch torchaudio
+
+brew install ffmpeg
+
+```
+
+###  运行
+方式 1：启动本地 Gradio 服务
+```
+ python launch.py
+
+```
+方式 2：使用命令行
+```
+python run.py --in_file test1.m4a
+
+```
 
 ## 支持
 
 + 如果这个项目对你有帮助，请给它一个Star吧！🌟 <a href='https://github.com/huiofficial/FunnyASR'><img src='https://img.shields.io/github/stars/huiofficial/FunnyASR?style=social&label=Star'></a>
-+ 支持 FunASR：<a href='https://github.com/alibaba-damo-academy/FunASR.stargazers'><img src='https://img.shields.io/github/stars/alibaba-damo-academy/FunASR.svg?style=social'></a>
 
 如果您有任何问题，欢迎建立 issue 和 pull request，也可以通过我的[邮箱](mailto:tzattack@outlook.com) 与我取得联系。 
 
