@@ -14,19 +14,16 @@ pip install -r requirements.txt
 pip install torch torchaudio
 
 brew install ffmpeg
-
 ```
 
 ###  运行
 方式 1：启动本地 Gradio 服务
 ```
  python launch.py
-
 ```
 方式 2：使用命令行
 ```
 python run.py --in_file test1.m4a
-
 ```
 
 ## 支持
